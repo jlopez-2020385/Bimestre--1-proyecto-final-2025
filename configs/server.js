@@ -17,6 +17,7 @@ const middlewares = (app) => {
 };
 
 const routes = (app) => {
+    app.use("/gestionProductos/v1/produc", productRoutes);
 };
 
 const conectarDB = async () => {
